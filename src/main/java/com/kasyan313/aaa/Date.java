@@ -2,6 +2,14 @@ package com.kasyan313.aaa;
 
 public class Date
 {
+    public Date(String date, boolean value) {
+        this.date = date;
+        this.value = value;
+    }
+
+    public Date() {
+    }
+
     private String date;
     private  boolean value;
 
@@ -12,6 +20,7 @@ public class Date
     public void setDate(String date) {
         this.date = date;
     }
+
 
     public boolean isValue() {
         return value;

@@ -18,8 +18,12 @@
                     let dat = JSON.parse(data.get("list"));
                     let response = await fetch('/dates/save', {
                         method: 'POST',
-                        body: dat
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(dat)
                     });
+                    alert(await  response.json());
                 }
             </script>
     </body>
